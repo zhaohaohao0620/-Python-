@@ -1,1 +1,2 @@
-记录常用Python语法
+# MyPython
+Python常用知识
