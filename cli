@@ -1,0 +1,32 @@
+//清华镜像
+pip install Pyinstaller==3.8 -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+https://github.com/DjangoPeng/keras-101.git
+
+https://github.com/zhaohaohao0620/-Python-.git
+
+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
+
+//设置代理
+git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy http://127.0.0.1:1080
+
+//取消代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+fatal错误
+git config --global -l
+env|grep -i proxy  
+
+git commit -m “提交信息”。
+git push -f origin main
+git pull --rebase origin main
+
+
+//vscode
+{
+    "python.analysis.extraPaths": [
+        "Time",
+    ]
+}
