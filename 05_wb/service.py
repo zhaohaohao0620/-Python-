@@ -1,4 +1,3 @@
-from enum import unique
 from spyne import (Application, Array, ServiceBase, Unicode,
                    UnsignedInteger, rpc)
 from spyne.model.complex import ComplexModel
@@ -7,14 +6,17 @@ from spyne.protocol.soap import Soap11
 from spyne.server.wsgi import WsgiApplication
 from wsgiref.simple_server import make_server
 
+
 class OutParam(ComplexModel):
     demo1 = UnsignedInteger
     demo2 = Double
     demo3 = Array(Double)
     demo4 = Unicode
 
+
 class InParam(ComplexModel):
     demo1 = Unicode
+
 
 class Demo(ServiceBase):
     """ 
@@ -36,7 +38,8 @@ class Demo(ServiceBase):
    </tns:Test1Response>
 
     """
-    @rpc(InParam, _returns = OutParam)
+
+    @rpc(InParam, _returns=OutParam)
     def Test1(self, WSRequest):
         print(WSRequest.demo1)
 
@@ -44,22 +47,19 @@ class Demo(ServiceBase):
 
         rsp.demo1 = 0xFF;
         rsp.demo2 = 100.00
-        rsp.demo3 = [1.0,2.0,3.0]
+        rsp.demo3 = [1.0, 2.0, 3.0]
         rsp.demo4 = 'test'
 
         return rsp
-
 
 
 if __name__ == '__main__':
     ip = '127.0.0.1'
     port = 8080
     application = Application([Demo],
-                               tns='Demo',
-                               in_protocol=Soap11(validator='lxml'),
-                               out_protocol=Soap11())
+                              tns='Demo',
+                              in_protocol=Soap11(validator='lxml'),
+                              out_protocol=Soap11())
     wsgi_app = WsgiApplication(application)
     server = make_server(ip, port, wsgi_app)
     server.serve_forever()
-
-
