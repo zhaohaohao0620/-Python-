@@ -13,6 +13,5 @@ def clientTest():
     print(str(client.last_received()))
 
 
-
 if __name__ == '__main__':
     clientTest()
