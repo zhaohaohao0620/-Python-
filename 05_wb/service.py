@@ -45,7 +45,7 @@ class Demo(ServiceBase):
 
         rsp = OutParam()
 
-        rsp.demo1 = 0xFF;
+        rsp.demo1 = 0xFF
         rsp.demo2 = 100.00
         rsp.demo3 = [1.0, 2.0, 3.0]
         rsp.demo4 = 'test'

@@ -1,7 +1,7 @@
 from suds.client import Client
 
 
-def clientTest():
+def clientTest() -> None:
     url = 'http://127.0.0.1:8080/?wsdl'
 
     req = {'demo1': 'client test'}
