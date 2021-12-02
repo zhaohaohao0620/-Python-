@@ -1,12 +1,8 @@
-from os import _exit
 from sys import argv, exit
 from time import sleep
 
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
-from PyQt5.QtGui import QIntValidator
-from PyQt5.QtWidgets import (QApplication, QFrame, QGridLayout, QLabel,
-                             QLineEdit, QMessageBox, QPushButton, QRadioButton,
-                             QWidget)
+from PyQt5.QtCore import QThread, pyqtSignal
+from PyQt5.QtWidgets import (QApplication, QWidget)
 
 
 class Demo(QWidget):
