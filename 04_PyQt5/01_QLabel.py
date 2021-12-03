@@ -45,7 +45,7 @@ class TabDemo(QTabWidget):
         label3.setToolTip('这是一个图片标签')
         label3.setPixmap(QPixmap("./../images/刘亦菲1.jpeg"))
 
-        label4.setText("<A href='http://www.cnblogs.com/wangshuo1/'>欢迎访问信平的小屋</a>")
+        label4.setText("<A href='https://github.com/zhaohaohao0620/MyPython/'>my github</a>")
         label4.setAlignment(Qt.AlignRight)
         label4.setToolTip('这是一个超链接标签')
 
