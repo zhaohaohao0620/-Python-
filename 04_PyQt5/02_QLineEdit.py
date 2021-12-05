@@ -23,9 +23,9 @@ def enter_press():
     print("已输入值")
 
 
-class TabDemo(QTabWidget):
+class Demo(QTabWidget):
     def __init__(self, parent=None):
-        super(TabDemo, self).__init__(parent)
+        super(Demo, self).__init__(parent)
         self.tab1 = QWidget()
         self.tab2 = QWidget()
         self.tab3 = QWidget()
@@ -161,6 +161,6 @@ class TabDemo(QTabWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    demo = TabDemo()
+    demo = Demo()
     demo.show()
     sys.exit(app.exec_())
