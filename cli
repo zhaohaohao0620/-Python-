@@ -1,11 +1,9 @@
 //清华镜像
-pip install Pyinstaller==3.8 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install xxxx -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 https://github.com/DjangoPeng/keras-101.git
 
 https://github.com/zhaohaohao0620/-Python-.git
-
-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
 
 //设置代理
 git config --global http.proxy http://127.0.0.1:1080
@@ -22,11 +20,3 @@ env|grep -i proxy
 git commit -m “提交信息”。
 git push -f origin main
 git pull --rebase origin main
-
-
-//vscode
-{
-    "python.analysis.extraPaths": [
-        "Time",
-    ]
-}
