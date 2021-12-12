@@ -16,7 +16,7 @@ class Icon(QWidget):
 
         self.setGeometry(300, 300, 250, 150)
         self.setWindowTitle('演示程序图标例子')
-        self.setWindowIcon(QIcon('./../images/cartoon1.ico'))
+        self.setWindowIcon(QIcon('./../../images/cartoon1.ico'))
 
 
 if __name__ == '__main__':

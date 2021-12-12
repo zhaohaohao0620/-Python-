@@ -20,7 +20,7 @@ class Form(QDialog):
         # 创建文本标签和图像标签，显示文本和图像
         self.textLabel = QLabel("Original text")
         self.imageLabel = QLabel()
-        self.imageLabel.setPixmap(QPixmap("./../images/python.png"))
+        self.imageLabel.setPixmap(QPixmap("./../../images/python.png"))
 
         # 设置栅格布局，并添加部件到相应的位置
         layout = QGridLayout()
@@ -56,7 +56,7 @@ class Form(QDialog):
     def copyImage(self):
         # 实例化剪切板，设置剪切板加载的图想路径
         clipboard = QApplication.clipboard()
-        clipboard.setPixmap(QPixmap("./../images/python.png"))
+        clipboard.setPixmap(QPixmap("./../../images/python.png"))
 
     def pasteImage(self):
         # 实例化剪切板，z设置图像标签的图片加载，从剪切板获取路径

@@ -37,7 +37,7 @@ class Demo(QTabWidget):
         self.tab1_btn1.clicked.connect(self.tab1_btn_state)
 
         self.tab1_btn2 = QPushButton('image')
-        self.tab1_btn2.setIcon(QIcon(QPixmap("./../images/python.png")))
+        self.tab1_btn2.setIcon(QIcon(QPixmap("./../../images/python.png")))
         self.tab1_btn2.clicked.connect(lambda: self.tab1_print_which_btn(self.tab1_btn2))
 
         self.tab1_btn3 = QPushButton("Disabled")

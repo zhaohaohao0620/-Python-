@@ -25,13 +25,13 @@ class MainWindow(QMainWindow):
         self.createMenus()
         self.createToolBars()
 
-        if self.image.load('./../images/刘亦菲 (1).jpeg'):
+        if self.image.load('./../../images/刘亦菲 (1).jpeg'):
             self.imageLabel.setPixmap(QPixmap.fromImage(self.image))
             self.resize(self.image.width(), self.image.height())
 
     def createActions(self):
         # 加载图标，添加快捷方式，添加提示信息，绑定槽函数
-        self.PrintAction = QAction(QIcon('./../images/刘亦菲 (1).jpeg'), self.tr('打印'), self)
+        self.PrintAction = QAction(QIcon('./../../images/刘亦菲 (1).jpeg'), self.tr('打印'), self)
         self.PrintAction.setShortcut('Ctrl+P')
         self.PrintAction.setStatusTip(self.tr('打印'))
         self.PrintAction.triggered.connect(self.slotPrint)

@@ -43,7 +43,7 @@ class Demo(QTabWidget):
 
         label3.setAlignment(Qt.AlignCenter)
         label3.setToolTip('这是一个图片标签')
-        label3.setPixmap(QPixmap("./../images/刘亦菲1.jpeg"))
+        label3.setPixmap(QPixmap("./../../images/刘亦菲1.jpeg"))
 
         label4.setText("<A href='https://github.com/zhaohaohao0620/MyPython/'>my github</a>")
         label4.setAlignment(Qt.AlignRight)

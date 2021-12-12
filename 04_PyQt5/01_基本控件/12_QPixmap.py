@@ -17,7 +17,7 @@ class QpixmapDemo(QWidget):
         layout = QVBoxLayout()
 
         lab1 = QLabel()
-        lab1.setPixmap(QPixmap('./../images/python.png'))
+        lab1.setPixmap(QPixmap('./../../images/python.png'))
 
         layout.addWidget(lab1)
 

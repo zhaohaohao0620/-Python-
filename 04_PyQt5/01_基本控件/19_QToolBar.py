@@ -14,9 +14,9 @@ class ToolBarDemo(QMainWindow):
         # 在工具栏区域添加文件工具栏
         tb = self.addToolBar('File')
         # 添加图形按钮
-        new = QAction(QIcon('./../images/new.png'), 'new', self)
-        _open = QAction(QIcon('./../images/open.png'), 'open', self)
-        save = QAction(QIcon('./../images/save.png'), 'save', self)
+        new = QAction(QIcon('./../../../images/new.png'), 'new', self)
+        _open = QAction(QIcon('./../../images/open.png'), 'open', self)
+        save = QAction(QIcon('./../../images/save.png'), 'save', self)
 
         tb.addAction(new)
         tb.addAction(_open)
