@@ -1,6 +1,9 @@
 //清华镜像
 pip install xxxx -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+//window设置永久源
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+
 https://github.com/DjangoPeng/keras-101.git
 
 https://github.com/zhaohaohao0620/-Python-.git
