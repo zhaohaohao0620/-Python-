@@ -1,2 +1,2 @@
-# MyPython
-        Python常用知识
+# MyKnowledge
+        Python
