@@ -65,7 +65,7 @@
 Python代码：
 
 ```Python
-print('hello, world')
+    print('hello, world')
 ```
 
 ---
