@@ -11,6 +11,11 @@
 
 ## git 配置
 
+### install
+ - sudo apt-get install git
+
+### 
+
 ### 常用命令
  - git commit -m “提交信息”。
  - git push -f origin main
