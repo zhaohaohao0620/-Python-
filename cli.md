@@ -12,9 +12,18 @@
 ## git 配置
 
 ### install
- - sudo apt-get install git
+ - sudo apt install git
+ - git config --global user.name "xxx"
+ - git config --global user.email "xxx@gmail.com"
 
-### 
+### github
+ - ssh-keygen 
+ - cat ~/.ssh/id_rsa.pub
+ - ssh -T git@github.com
+
+### 本地git
+ - git init 
+ - git clone git@github.com:zhaohaohao0620/git-zhao.git
 
 ### 常用命令
  - git commit -m “提交信息”。
@@ -32,3 +41,10 @@
 ### fatal错误
  - git config --global -l
  - env|grep -i proxy
+
+
+
+
+## shell
+
+**chmod +x ./test.sh  使脚本具有执行权限**
