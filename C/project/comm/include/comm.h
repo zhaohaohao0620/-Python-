@@ -7,7 +7,7 @@
 
 #define SETBIT(data, bit) (data |= (1 << bit))
 #define CLRBIT(data, bit) (data &= (~(1 << bit)))
-#define SETBIT(data, bit) ((data >> bit) & 1)
+#define GETBIT(data, bit) ((data >> bit) & 1)
 
 #define         INT32       int
 
