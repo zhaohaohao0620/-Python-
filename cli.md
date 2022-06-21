@@ -56,10 +56,3 @@
 
 
 
-## shell
-
-**chmod +x ./test.sh  使脚本具有执行权限**
-
-## gcc
-
-### suod apt install gcc
